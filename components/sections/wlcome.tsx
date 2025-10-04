@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { motion } from "framer-motion";
+import { hover, motion } from "framer-motion";
 import { useState,useEffect } from "react"; 
 const types=['Full Stack Developer','React / Next.js Developer','Node.js Developer','Express.js Developer']
 import { Social } from "../socialmedia";
@@ -23,7 +23,7 @@ return(
             lg:h-[850px] lg:text-[5px] xl:text-[7px] gap-[40px] sm:gap-[50px] xl:gap-[70px] ">
                       <Image  alt="Background img" src={bcimg.src}  className=" absolute" fill ></Image>
                 <div className="flex w-full  items-center justify-center flex-col ">
-                <motion.p initial={{x:-250,opacity:0}} transition={{duration:1.2}} animate={{x:0,opacity:100}} className="text-center font-semibold  
+                <motion.p initial={{x:-400,opacity:0}} transition={{duration:2}} animate={{x:0,opacity:100}} className="text-center font-semibold  
                   text-white text-[9em] leading-[65px] sm:leading-[80px] lg:leading-[100px] xl:leading-[140px] ">
                     <span className="text-white relative  text-[1.5em] z-10">
                         HELLO I'am AHMED a 
@@ -44,8 +44,11 @@ return(
 
          
                 </div>
-                <Button className="relative  w-[20%] sm:w-[14%] xl:w-[12%] font-bold h-[40px] sm:h-[50px]
-                 text-[4.5em] bg-[#0077b6] hover:cursor-pointer hover:underline hover:bg-[#023047]"> MY CV </Button>
+                <motion.div whileHover={{scale:1.1}} initial={{opacity:0}} animate={{opacity:100}} transition={{opacity:{duration:3}}} 
+                className="relative  w-[22%] sm:w-[14%] xl:w-[12%] font-bold h-[40px] sm:h-[50px] ">
+                    <Button  className="w-full h-full text-[4.5em] bg-[#0077b6] hover:cursor-pointer hover:underline hover:bg-[#023047]"> MY CV </Button>
+                </motion.div>
+                
 
 
                 <Social></Social>
