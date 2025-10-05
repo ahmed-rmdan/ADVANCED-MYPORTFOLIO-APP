@@ -15,7 +15,7 @@ export function Contact() {
   <DialogTrigger className="hover:underline hover:cursor-pointer ">Contact</DialogTrigger>
   <DialogContent className="z-[20000]">
     <DialogHeader>
-      <DialogTitle className="text-[#023e8a] text-[1.8em] font-bold underline">Contact ME</DialogTitle>
+      <DialogTitle className="text-[#0077b6] text-[1.8em] font-extrabold underline">Contact ME</DialogTitle>
       <DialogDescription >
             
       </DialogDescription>

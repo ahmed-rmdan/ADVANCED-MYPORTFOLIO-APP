@@ -1,8 +1,7 @@
-'use client'
 import { motion } from "framer-motion"
 
 
-export  const Aboutme:React.FC<{}> =()=>{
+export  const Skills:React.FC<{}> =()=>{
 
 return(
            <div className="flex  flex-col w-full h-[450px] items-center bg-[#1A2228] text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">

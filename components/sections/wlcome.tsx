@@ -2,7 +2,7 @@
 import React from "react";
 import { hover, motion } from "framer-motion";
 import { useState,useEffect } from "react"; 
-const types=['Full Stack Developer','React / Next.js Developer','Node.js Developer','Express.js Developer']
+const types=['Full Stack Developer','React / Next.js Developer','Node.js Developer','Express.js Developer','Typescript Developer']
 import { Social } from "../socialmedia";
 import Image from "next/image";
 import bcimg from '@/public/artistic-blurry-colorful-wallpaper-background.jpg'
@@ -13,7 +13,7 @@ const [typeindex, settypeindex] = useState<number>(0);
 
 useEffect(() => {
   const interval = setInterval(() => {
-    settypeindex((prev) => (prev < 3 ? prev + 1 : 0));
+    settypeindex((prev) => (prev < 4 ? prev + 1 : 0));
   }, 4000);
 
   return () => clearInterval(interval);
