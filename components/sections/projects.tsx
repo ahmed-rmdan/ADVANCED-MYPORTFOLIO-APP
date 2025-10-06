@@ -9,9 +9,9 @@ import oldportifilio from '@/public/projects/old portifilio/Screenshot 2025-02-2
 export  const Projects:React.FC<{}> =()=>{
 
 return(
-           <div className="flex  flex-col w-full  items-center bg-[#1A2228] pb-[40px]  text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">
+           <div id="section-4" className="flex  flex-col w-full  items-center bg-[#1A2228] pb-[40px]  text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">
        
-                 <motion.h1 initial={{x:-350,opacity:0}} transition={{duration:2}} animate={{x:0,opacity:100}} 
+                 <motion.h1 initial={{x:-180,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.2}} whileInView={{x:0,opacity:100}} 
                  className="text-[6.5em] underline font-extrabold text-[#0077b6] mt-[20px]"> Projects</motion.h1>
                        <ul className="flex flex-col justify-center items-center w-[95%] sm:w-[80%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%]  gap-[20px] sm:gap-[30px]">
                              <Projectitem image={modeximge.src} liveurl={'https://modexstore.netlify.app/'} video={'https://youtu.be/pR-HC799oLM'}

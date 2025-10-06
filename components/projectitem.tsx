@@ -10,10 +10,11 @@ import {
 import Image from "next/image"
 import yotube from '@/public/SOCIAL MEDIA/YouTube_full-color_icon_(2024).svg.png'
 import github from '@/public/SOCIAL MEDIA/github-6980894_1280.png'
+import { motion } from "framer-motion"
 export  const Projectitem:React.FC<{title:string,image:string,description:string,tech:string ,liveurl:string|null,video:string|null,frontend:string|null,backend:string|null}> =(props)=>{
 
 return(
-       <li className="w-full rounded-[10px] bg-[#000020]">
+       <motion.li initial={{opacity:0,y:200}} viewport={{once:true,amount:0.25}} transition={{duration:2}} whileInView={{opacity:100,y:0}} className="w-full rounded-[10px] bg-[#000020]">
                 <ItemGroup >
       
           <Item key={props.title} variant="outline" className="border-[#000020] border-4">
@@ -60,7 +61,7 @@ return(
           </Item>
     
       </ItemGroup>
-       </li>
+       </motion.li>
 
        
 )

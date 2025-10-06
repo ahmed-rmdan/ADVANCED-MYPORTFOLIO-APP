@@ -33,21 +33,24 @@ function handleclick(){
     setmenu(prev=>!prev)
 }
 
-
+function handlenavigate(input:string){
+  const section=document.getElementById(`section-${input}`)
+  section?.scrollIntoView({behavior:'smooth'})
+}
 
 
 if(width>=768){
 return(
            <nav className="flex flex-row sticky top-0 bl z-[10000]  w-full  p-5  
            justify-between   items-center bg-[#1A2228] text-white text-[2.5px] sm:text-[3.5px]   lg:text-[4px] xl:flex-row xl:text-[4px] 2xl:text-[4.5px] min-h-[30px]   ">
-             <Link href={'/'} className=" text-center text-[#0077b6] font-extrabold w-[40%] sm:w-[25%] 2xl:w-[20%] sm:text-[6em] md:w-[28%] lg:text-[6.5em] 
-               xl:w-[20%] xl:text-[7em]    "><h1  > AHMED RAMADAN</h1></Link>
+             <button onClick={()=>{handlenavigate('1')}} className=" text-center text-[#0077b6] font-extrabold w-[40%] sm:w-[25%] 2xl:w-[20%] sm:text-[6em] md:w-[28%] lg:text-[6.5em] 
+               xl:w-[20%] xl:text-[7em] hover:cursor-pointer   "><h1  > AHMED RAMADAN</h1></button>
              <div className="flex flex-row items-center justify-center gap-[8%]   sm:min-w-[60%] text-[3em]
               text-white font-semibold md:w-[55%]  lg:w-[65%]  2xl:w-[50%] md:text-[4em] lg:text-[4em]   xl:text-[5em]  ">
                 <div className="flex min-w-[55%] md:text-[0.85em] lg:text-[1em] text-[#0077b6]  h-full justify-center items-center gap-[16%]">
-                       <Link href={'/products/allproducts'} className="hover:underline" > AboutMe</Link>
-                <Link href={'/categories'} className="hover:underline" > Skills</Link>
-                 <Link   href={'/contact'} className="hover:underline"> Projects</Link>
+                       <button onClick={()=>{handlenavigate('2')}}  className="hover:underline hover:cursor-pointer" > AboutMe</button>
+                <button  onClick={()=>{handlenavigate('3')}} className="hover:underline hover:cursor-pointer" > Skills</button>
+                 <button  onClick={()=>{handlenavigate('4')}}  className="hover:underline hover:cursor-pointer"> Projects</button>
                  <Contact></Contact>
                 </div>
               
@@ -95,9 +98,9 @@ else {
                          <div className="flex flex-col w-full mt-[50px] h-[100%] items-center justify-start gap-[1%] text-[13px] 
               text-white font-semibold  ">
                 <div className="flex flex-col w-[40%] text-[#0077b6] h-[30%] justify-center items-center gap-[20%]">
-                       <Link href={'/products/allproducts'} className="hover:underline" > AboutMe</Link>
-                <Link href={'/categories'} className="hover:underline" > Skills</Link>
-                 <Link   href={'/contact'} className="hover:underline"> Projects</Link>
+                  <button onClick={()=>{handlenavigate('2')}}  className="hover:underline hover:cursor-pointer" > AboutMe</button>
+                <button  onClick={()=>{handlenavigate('3')}} className="hover:underline hover:cursor-pointer" > Skills</button>
+                 <button  onClick={()=>{handlenavigate('4')}}  className="hover:underline hover:cursor-pointer"> Projects</button>
                     <Contact></Contact>
                 </div>
               
