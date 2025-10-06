@@ -13,14 +13,20 @@ export  const Social:React.FC<{}> =()=>{
 return(
         
                              <div className=" w-[35%] sm:w-[25%] 2xl:w-[22%]  flex flex-row  items-center gap-[4%] justify-around max-h-[90%] ">
-                      <motion.a initial={{opacity:0}} animate={{opacity:100}} transition={{duration:3}}  href="https://github.com/ahmed-rmdan" className="min-w-[23%] min-h-[35px] max-h-[35px] relative ">  <Image alt="github-logo" 
+                      <motion.a initial={{opacity:0}} animate={{opacity:100}} transition={{duration:3}} 
+                       href="https://github.com/ahmed-rmdan" className="min-w-[23%] min-h-[35px] max-h-[35px] relative ">  <Image alt="github-logo" 
                       className="  max-w-full max-h-full " fill 
-                       src={githublogo.src}></Image>    </motion.a>
-                            <motion.a initial={{opacity:0}} animate={{opacity:100}} transition={{duration:4}}  href="https://www.linkedin.com/in/ahmed-ramadan-63a4272b9/" className="min-w-[23%] min-h-[30px] max-h-[30px] relative ">
-                              <Image fill  alt='linkdin-logo' src={linkedlogo.src} className="  max-w-full max-h-full "></Image>    </motion.a>
+                       src={githublogo.src}></Image>   
+                        </motion.a>
+                            <motion.a initial={{opacity:0}} animate={{opacity:100}} transition={{duration:4}} 
+                             href="https://www.linkedin.com/in/ahmed-ramadan-63a4272b9/" className="min-w-[23%] min-h-[30px] max-h-[30px] relative ">
+                              <Image fill  alt='linkdin-logo' src={linkedlogo.src} className="  max-w-full max-h-full "></Image>    
+                              </motion.a>
 
-                             <motion.a  initial={{opacity:0}} animate={{opacity:100}} transition={{duration:5}}   href="https://www.youtube.com/@ahmedrmadan2406 " className="min-w-[23%] min-h-[25px] max-h-[25px] relative ">  
-                             <Image alt="youtube-logo" fill src={youtubelogo.src}className="  max-w-full max-h-full "></Image>    </motion.a> 
+                             <motion.a  initial={{opacity:0}} animate={{opacity:100}} transition={{duration:5}}   
+                             href="https://www.youtube.com/@ahmedrmadan2406 " className="min-w-[23%] min-h-[25px] max-h-[25px] relative ">  
+                             <Image alt="youtube-logo" fill src={youtubelogo.src}className="  max-w-full max-h-full "></Image>    
+                             </motion.a> 
                         </div>
 
            

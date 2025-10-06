@@ -60,7 +60,8 @@ return(
        
                  <motion.h1 initial={{y:200,opacity:0}} transition={{duration:2}} animate={{y:0,opacity:100}} 
                  className="text-[6.5em] underline font-extrabold text-[#0077b6] mt-[20px]"> MY Skills</motion.h1>
-                   <Accordion className= " w-[95%] sm:w-[80%] lg:w-[60%]  2xl:w-[45%]" type="single" collapsible>
+                 <motion.div initial={{y:200,opacity:0}} transition={{duration:2}} animate={{y:0,opacity:100}} className="w-full flex justify-center items-center">
+                     <Accordion className= " w-[95%] sm:w-[80%] lg:w-[60%]  2xl:w-[45%]" type="single" collapsible>
                          <AccordionItem value="item-1">
             <AccordionTrigger className="text-[#0077b6] text-[4em] font-bold">Programming languages </AccordionTrigger>
              <AccordionContent className="text-[#0077b6] gap-[10px] flex flex-col  text-[1.2em]">
@@ -167,6 +168,8 @@ return(
                                 </AccordionItem>
 
                    </Accordion>
+                 </motion.div>
+                  
 
            
            </div>   

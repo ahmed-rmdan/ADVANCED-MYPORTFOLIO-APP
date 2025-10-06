@@ -21,13 +21,13 @@ export function Dialogemail() {
            sm:h-[50%] min-w-[90%] sm:w-[80%] xl:w-full xl:h-full text-[0.8em] sm:text-[0.7em] 
            hover:bg-[#023047] hover:text-white hover:cursor-pointer">SEND EMAIL</Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px] z-[20000]">
+        <DialogContent className="sm:max-w-[425px] z-[20000] text-[#0077b6]">
           <DialogHeader>
-            <DialogTitle >Send Email To ME</DialogTitle>
+            <DialogTitle className="text-[#0077b6] font-bold" >Send Email To ME</DialogTitle>
           </DialogHeader>
           <div className="grid gap-4">
             <div className="grid gap-3">
-              <Label htmlFor="name-1">Name</Label>
+              <Label htmlFor="name-1" >Name</Label>
               <Input id="name-1" type="text" name="name" placeholder="Your Name" />
             </div>
             <div className="grid gap-3">
