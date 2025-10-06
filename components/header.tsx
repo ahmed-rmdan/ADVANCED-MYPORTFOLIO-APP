@@ -40,7 +40,7 @@ if(width>=768){
 return(
            <nav className="flex flex-row sticky top-0 bl z-[10000]  w-full  p-5  
            justify-between   items-center bg-[#1A2228] text-white text-[2.5px] sm:text-[3.5px]   lg:text-[4px] xl:flex-row xl:text-[4px] 2xl:text-[4.5px] min-h-[30px]   ">
-             <Link href={'/'} className=" text-center text-[#0077b6] font-bold w-[40%] sm:w-[25%] 2xl:w-[20%] sm:text-[6em] md:w-[28%] lg:text-[6.5em] 
+             <Link href={'/'} className=" text-center text-[#0077b6] font-extrabold w-[40%] sm:w-[25%] 2xl:w-[20%] sm:text-[6em] md:w-[28%] lg:text-[6.5em] 
                xl:w-[20%] xl:text-[7em]    "><h1  > AHMED RAMADAN</h1></Link>
              <div className="flex flex-row items-center justify-center gap-[8%]   sm:min-w-[60%] text-[3em]
               text-white font-semibold md:w-[55%]  lg:w-[65%]  2xl:w-[50%] md:text-[4em] lg:text-[4em]   xl:text-[5em]  ">
@@ -79,7 +79,7 @@ else {
   items-center text-black text-[2.5px]  h-[20px]   ">
              <div className="flex flex-row w-[100%] text-[1em] items-center gap-[8%]">
                <AlignJustify color="#0077b6" onClick={handleclick}></AlignJustify>
-              <Link href={'/'} className=" text-center text-[#0077b6] font-bold text-[5.5em] w-[55%] 
+              <Link href={'/'} className=" text-center text-[#0077b6] font-extrabold text-[5.5em] w-[55%] 
               ]  ">AHMED RAMADAN</Link>
               <div className=" flex flex-wrap  w-[15%]  text-[10px] items-center  ">
                    
