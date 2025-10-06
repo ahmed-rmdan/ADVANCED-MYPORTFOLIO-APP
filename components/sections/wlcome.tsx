@@ -45,7 +45,7 @@ return(
          
                 </div>
                 <motion.div whileHover={{scale:1.1}} initial={{opacity:0}} animate={{opacity:100}} transition={{opacity:{duration:3}}} 
-                className="relative  w-[22%] sm:w-[14%] xl:w-[12%] font-bold h-[40px] sm:h-[50px] ">
+                className="relative  w-[25%] sm:w-[14%] xl:w-[12%] font-bold h-[40px] sm:h-[50px] ">
                     <Button  className="w-full h-full text-[4.5em] bg-[#0077b6] hover:cursor-pointer hover:underline hover:bg-[#023047]"> MY CV </Button>
                 </motion.div>
                 

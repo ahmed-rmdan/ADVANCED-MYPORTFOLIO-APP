@@ -35,22 +35,23 @@ return(
               <p className="text-[#0077b6] font-semibold text-[1.1em] ">{props.tech}</p>
               <p className="text-[1.2em] font-bold">Project Links :-</p>
                    <ul className="flex flex-row flex-wrap justify-center items-center h-[70px] sm:h-[50px] w-full gap-[2%] ">
-                      <li className="w-[45%] sm:w-[23%] h-[45%] sm:h-full relative "> <a className="w-full h-full underline text-[1em] sm:text-[1.2em] font-bold  flex justify-center
-                       items-center cursor-pointer" href={props.liveurl as string}>Live Demo</a> 
+                      <li className="w-[45%] sm:w-[23%] h-[45%] sm:h-full relative "> <a className="w-full h-full  text-[1em] sm:text-[1.2em] 
+                      font-bold  flex justify-center
+                       items-center cursor-pointer hover:underline " href={props.liveurl as string}>Live Demo</a> 
                        </li>
                     { props.video && <li className="w-[45%] sm:w-[23%] h-[45%] sm:h-full flex flex-row items-center justify-center gap-1  "> <div className=" relative w-[20%] h-[70%] ">
                          <Image alt="youtube" fill src={yotube.src} className=" absolute w-full h-full" ></Image></div>
-                       <a className=" h-full underline text-[1em] sm:text-[1.2em] font-bold  flex justify-center
+                       <a className=" h-full hover:underline text-[1em] sm:text-[1.2em] font-bold  flex justify-center
                        items-center cursor-pointer" href={props.video}>Video Demo</a>
                        </li>}
                     {props.frontend &&   <li className="w-[45%] sm:w-[23%] h-[45%] sm:h-full flex flex-row items-center justify-center gap-1  "> <div className=" relative w-[20%] h-[70%] ">
                          <Image alt="youtube" fill src={github.src} className=" absolute w-full h-full" ></Image></div>
-                       <a className=" h-full underline text-[0.9em] sm:text-[0.9em] font-bold  flex justify-center
+                       <a className=" h-full hover:underline text-[0.9em] sm:text-[0.9em] font-bold  flex justify-center
                        items-center cursor-pointer" href={props.frontend}>Frontend-Source</a>
                        </li>}
                           {props.backend && <li className="w-[45%] sm:w-[23%] h-[45%] sm:h-full flex flex-row items-center justify-center gap-1  "> <div className=" relative w-[20%] h-[70%] ">
                          <Image alt="youtube" fill src={github.src} className=" absolute w-full h-full" ></Image></div>
-                       <a className=" h-full underline text-[0.9em] sm:text-[0.9em] font-bold  flex justify-center
+                       <a className=" h-full hover:underline text-[0.9em] sm:text-[0.9em] font-bold  flex justify-center
                        items-center cursor-pointer" href={props.backend}>Backend-Source</a>
                        </li>}
                       
