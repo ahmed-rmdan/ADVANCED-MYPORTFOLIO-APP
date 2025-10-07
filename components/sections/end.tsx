@@ -6,9 +6,9 @@ import { Social } from "../socialmedia";
 import { Contact } from "../contact";
 import { Dialogemail } from "../emailform";
 import { motion } from "framer-motion";
-export const End:React.FC<{}>=()=>{
+export function End(){
     return(<>
-    <section   className="flex flex-col items-center justify-center gap-[2%] w-full min-h-[120px] sm:h-[190px] bg-[#000020]
+    <section   className="flex flex-col items-center justify-center gap-[2%] w-full min-h-[120px]  sm:min-h-[190px] sm:max-h-[190px] bg-[#000020]
      text-[#0077b6] text-[0.65em] md:text-[1em] xl:text-[1.2em]  ">
         <motion.div initial={{x:200,opacity:0}}  transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{x:0,opacity:100}} className="flex flex-row
          font-semibold items-center justify-around w-[90%] sm:w-[80%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%] text-[1.25em] h-[50px] md:h-[60px] " >

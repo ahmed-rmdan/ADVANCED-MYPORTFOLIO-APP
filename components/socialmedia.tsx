@@ -7,7 +7,7 @@ import linkedlogo from  '@/public/SOCIAL MEDIA/linkdin.png'
 import youtubelogo from '@/public/SOCIAL MEDIA/YouTube_full-color_icon_(2024).svg.png'
 import Image from "next/image";
 import { motion } from "framer-motion";
-export  const Social:React.FC<{}> =()=>{
+export  function Social(){
 
 
 return(

@@ -53,7 +53,7 @@ import github from '@/public/skills/github.png'
 
 
 
-export  const Skills:React.FC<{}> =()=>{
+export  function Skills(){
 
 return(
            <div id="section-3" className="flex  flex-col w-full pb-10  items-center bg-[#000020] text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5.5px] xl:text-[7px] ">

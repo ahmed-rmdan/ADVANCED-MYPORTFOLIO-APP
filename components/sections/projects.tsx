@@ -6,7 +6,7 @@ import fastdishimge from '@/public/projects/fastdish/Capture.jpg'
 import todo from '@/public/projects/todoapp/todoapp.jpg'
 import oldportifilio from '@/public/projects/old portifilio/Screenshot 2025-02-25 100159.jpg'
 
-export  const Projects:React.FC<{}> =()=>{
+export  function Projects(){
 
 return(
            <div id="section-4" className="flex  flex-col w-full  items-center bg-[#1A2228] pb-[40px]  text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">

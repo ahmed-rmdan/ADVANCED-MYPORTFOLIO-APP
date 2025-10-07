@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/dialog"
 import { Phone } from 'lucide-react';
 import { Mail } from 'lucide-react';
-import { Zap } from 'lucide-react';
+
 export function Contact() {
   return (
          <Dialog >

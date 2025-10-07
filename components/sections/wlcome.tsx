@@ -1,13 +1,14 @@
 'use client'
 import React from "react";
-import { hover, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import { useState,useEffect } from "react"; 
 const types=['Full Stack Developer','React / Next.js Developer','Node.js Developer','Express.js Developer','Typescript Developer']
 import { Social } from "../socialmedia";
 import Image from "next/image";
 import bcimg from '@/public/artistic-blurry-colorful-wallpaper-background.jpg'
 import { Button } from "@/components/ui/button"
-export  const Welcome:React.FC<{}> =()=>{
+
+export  function Welcome(){
 
 const [typeindex, settypeindex] = useState<number>(0);
 

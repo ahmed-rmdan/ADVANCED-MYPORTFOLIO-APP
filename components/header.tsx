@@ -13,8 +13,8 @@ import githublogo from '@/public/SOCIAL MEDIA/github-6980894_1280.png'
 import linkedlogo from  '@/public/SOCIAL MEDIA/linkdin.png'
 import youtubelogo from '@/public/SOCIAL MEDIA/YouTube_full-color_icon_(2024).svg.png'
 import { Contact } from "./contact";
-import { Main } from "next/document";
-export const Header:React.FC<{}>=()=>{
+
+export function Header(){
     
 const [width,setwidth]=useState<number>(0)
 const [menu,setmenu]=useState<boolean>(false)
