@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export  function Aboutme(){
 
 return(
-           <div id="section-2" className="flex  flex-col w-full h-[450px] items-center bg-[#1A2228] text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">
+           <div id="section-2" className="flex  flex-col w-full min-h-[450px] items-center bg-[#1A2228] text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">
        
                  <motion.h1 initial={{x:250,opacity:0}}  transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{x:0,opacity:100}} 
                  className="text-[6.5em] underline font-extrabold text-[#0077b6] mt-[20px]"> About ME</motion.h1>

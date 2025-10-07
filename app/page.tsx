@@ -5,7 +5,7 @@ import { Projects } from "@/components/sections/projects";
 import { End } from "@/components/sections/end";
 export default function Home() {
   return (
-   <main>
+   <main className="min-w-full">
  <Welcome></Welcome>
  <Aboutme></Aboutme>
  <Skills></Skills>
