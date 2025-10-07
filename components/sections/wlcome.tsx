@@ -27,7 +27,7 @@ return(
                 <motion.p initial={{x:-200,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{x:0,opacity:100}} className="text-center font-semibold  
                   text-white text-[9em] leading-[65px] sm:leading-[80px] lg:leading-[100px] xl:leading-[140px] ">
                     <span className="text-white relative  text-[1.5em] z-10">
-                        HELLO I'am AHMED a 
+                        HELLO Iam AHMED a 
                         </span> 
                      
                      <br  />
