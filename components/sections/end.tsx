@@ -28,10 +28,10 @@ export function End(){
     </section >
 
 
-     <section  className="font-semibold bg-black min-h-[35px] flex items-center justify-center sm:h-[50px] text-[9.5px] sm:text-[16px] text-white">
+     <section  className="font-semibold bg-black min-h-[35px] flex items-center justify-center sm:h-[50px] text-[8px] sm:text-[16px] text-white">
       <motion.div initial={{x:-200,opacity:0}}  transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{x:0,opacity:100}} 
       className="flex flex-row items-center  w-full h-full justify-around ">
-           <p>modexstore.netlify.app@2025</p>
+           <p>ahmed-rarmadan-portfolio.vercel.app@2025</p>
                   <p>ahmedrmadan251998@gmail.com</p>
       </motion.div>
                
