@@ -78,13 +78,13 @@ return(
 }
 else {
   return(
-<nav className="flex flex-row sticky top-0 bg-[#1A2228] z-[10000]  min-w-full  p-6  justify-between 
+<nav className="flex flex-row sticky top-0 bg-[#1A2228] z-[10000]  min-w-full  p-3  justify-between 
   items-center text-black text-[2.5px]  min-h-[20px]   ">
              <div className="flex flex-row w-[100%] text-[1em] items-center gap-[8%]">
-               <AlignJustify color="#0077b6" onClick={handleclick}></AlignJustify>
-              <Link href={'/'} className=" text-center text-[#0077b6] font-extrabold text-[5.5em] w-[60%] 
+               <AlignJustify color="#0077b6" className="min-w-[10%]" onClick={handleclick}></AlignJustify>
+              <Link href={'/'} className=" text-center text-[#0077b6] font-extrabold text-[5.5em] min-w-[55%] 
               ]  ">AHMED RAMADAN</Link>
-              <div className=" flex flex-wrap  w-[25%]  text-[10px] items-center  ">
+              <div className=" flex flex-wrap  w-[20%]  text-[10px] items-center  ">
                    
                        <Dialogemail ></Dialogemail>
                          </div>
