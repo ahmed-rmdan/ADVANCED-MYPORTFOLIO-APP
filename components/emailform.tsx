@@ -24,7 +24,7 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
 
   
   const formdata=Object.fromEntries(data.entries())
- fetch('http://localhost:3000/email',{
+ fetch('https://ahmed-rarmadan-portfolio.vercel.app/email',{
   method:'POST'
   ,
   headers:{
