@@ -24,7 +24,7 @@ return(
             lg:min-h-[850px] lg:text-[5px] xl:text-[7px] gap-[40px] sm:gap-[50px] xl:gap-[70px] ">
                       <Image  alt="Background img" src={bcimg.src}  className=" absolute" fill ></Image>
                 <div className="flex w-full  items-center justify-center flex-col ">
-                <motion.p initial={{x:-200,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{x:0,opacity:100}} className="text-center font-semibold  
+                <motion.p initial={{x:-100,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{x:0,opacity:100}} className="text-center font-semibold  
                   text-white text-[9em] leading-[65px] sm:leading-[80px] lg:leading-[100px] xl:leading-[140px] ">
                     <span className="text-white relative  text-[1.5em] z-10">
                         HELLO Iam AHMED a 
@@ -45,7 +45,7 @@ return(
 
          
                 </div>
-                <motion.div whileHover={{scale:1.1}} initial={{opacity:0}} viewport={{once:true,amount:0.3}} whileInView={{opacity:100}} transition={{opacity:{duration:3}}} 
+                <motion.div whileHover={{scale:1.1}}  viewport={{once:true,amount:0.3}} whileInView={{opacity:100}} transition={{opacity:{duration:3}}} 
                 className="relative  w-[25%] sm:w-[14%] xl:w-[12%] font-bold h-[40px] sm:h-[50px] ">
                     <Button onClick={()=>{
                       window.location.href='https://drive.google.com/file/d/1btjGMO6xV4pr3Ui46gq8dYsdUXqpeBAM/view?usp=drive_link'

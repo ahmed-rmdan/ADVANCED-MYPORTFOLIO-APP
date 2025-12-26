@@ -5,15 +5,24 @@ import modeximge from '@/public/projects/modexstore/modex.jpg'
 import fastdishimge from '@/public/projects/fastdish/Capture.jpg'
 import todo from '@/public/projects/todoapp/todoapp.jpg'
 import oldportifilio from '@/public/projects/old portifilio/Screenshot 2025-02-25 100159.jpg'
-
+import FineTech from '@/public/projects/finetech/FineTech.jpg'
 export  function Projects(){
 
 return(
            <div id="section-4" className="flex  flex-col w-full  items-center bg-[#1A2228] pb-[40px]  text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5px] xl:text-[7px] ">
        
-                 <motion.h1 initial={{x:-180,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.2}} whileInView={{x:0,opacity:100}} 
+                 <motion.h1  transition={{duration:2}} viewport={{once:true,amount:0.2}} whileInView={{x:0,opacity:100}} 
                  className="text-[6.5em] underline font-extrabold text-[#0077b6] mt-[20px]"> Projects</motion.h1>
                        <ul className="flex flex-col justify-center items-center w-[95%] sm:w-[80%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%]  gap-[20px] sm:gap-[30px]">
+                             <Projectitem image={FineTech.src} liveurl={'https://finetech-platform.vercel.app/'} video={'https://www.youtube.com/watch?v=7qeTip2uvP0'}
+                             frontend={'https://github.com/ahmed-rmdan/FineTech-ReviewsAndArticles_Platform-FRONTEND'}
+                              backend={'https://github.com/ahmed-rmdan/FineTech_ReviewsAndArticles_Platform-Backend'}
+                              description="FineTech Platform is a full-stack Reviews and Articles Platform web app with an integrated Admin Dashboard & Analysis Board .
+It provides a experience for users that can interact and check reviews and articles for leatest technology and provide a full control DashBoard and analysis for admin."
+                           tech="Nextjs ,TypeScript ,TailwindCSS ,ShadCN ,redux toolkit ,framer-motion ,Chart.js React-Form-Hook
+, Zod Node.js, Express.js ,MongoDB ,Mongoose ,Redis ,Restful api ,validator ,pagination Role Authorization , Brevo
+,cloundairy ,multer , JWT ,Next-Auth ,OAuth 2.0 ,Rate-limiting , Docker ,Docker compose ,ci/cd ,GitHub Actions
+,Jest ,supertest ,React Testing Library ,Swagger , Render ,Vercel ,Redis UpStash " title="FineTech Platform" ></Projectitem>                        
                              <Projectitem image={modeximge.src} liveurl={'https://modexstore.netlify.app/'} video={'https://youtu.be/pR-HC799oLM'}
                              frontend={'https://github.com/ahmed-rmdan/ModexStore'} backend={'https://github.com/ahmed-rmdan/ModexStore-backend'}
                               description="Modex Store is a full-stack E-Commerce web app with an integrated Admin Dashboard.
@@ -27,9 +36,9 @@ Nodemailer , Brevo , Vite , Ts-node-dev , Netlify , Render , Jest , React-test-l
                               selecting the type of the meal and search for the meal you want and you can add then in your favourite and to your cart
                                and add the number you want and purchase them by a very dynamic cart and making order and select payment and track order" 
                               tech="TypeScript , React.js , CSS , React Router , Context API , React- Leaflet ,
-Nodejs , Express.js , REST APIs , MongoDB , mongoose , Express-validator , Authentication ,
-Role Authorization , WebSocket , railway , Netlify
-" title=" FastDish APP" ></Projectitem>
+                                    Nodejs , Express.js , REST APIs , MongoDB , mongoose , Express-validator , Authentication ,
+                                    Role Authorization , WebSocket , railway , Netlify
+                                          " title=" FastDish APP" ></Projectitem>
                          <Projectitem image={todo.src} liveurl={'https://tasks-timetracker.netlify.app/'} video={null}
                              frontend={'https://github.com/ahmed-rmdan/TODO__TIMETRRACKER-APP'} backend={null}
                               description="Add tasks to track the date and the time left to do the task ,with good slider to show the Tasks ." 

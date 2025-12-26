@@ -28,7 +28,6 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
   method:'POST'
   ,
   headers:{
-  
     'Content-Type': 'application/json',
     'Accept': 'application/json'
   },
@@ -38,7 +37,7 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
 }
 
   return (
-    <Dialog    >
+    <Dialog >
       
         <DialogTrigger asChild>
           <Button variant="outline" className="bg-[#0077b6] text-white border-none h-[30%]
@@ -50,7 +49,7 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
             <DialogTitle className="text-[#0077b6] font-bold" >Send Email To ME</DialogTitle>
         
           </DialogHeader>
-          <form onSubmit={handlesubmit} >
+          <form   onSubmit={handlesubmit} >
           <div className="grid gap-4">
             <div className="grid gap-3">
               <Label htmlFor="name-1" >Name</Label>
@@ -65,13 +64,15 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
               <Textarea id="content" name="content" required></Textarea>
             </div>
           </div>
+           <Button type="submit" className="bg-[#0077b6] hover:cursor-pointer hover:bg-[#023047] mt-[10px]"  >Send Message</Button>
+            </form >
           <DialogFooter className="mt-[10px]">
             <DialogClose asChild>
               <Button className="hover:cursor-pointer" variant="outline">Cancel</Button>
             </DialogClose>
-            <Button type="submit" className="bg-[#0077b6] hover:cursor-pointer hover:bg-[#023047]"  >Send Message</Button>
+           
           </DialogFooter>
-            </form>
+          
         </DialogContent>
     
     </Dialog>

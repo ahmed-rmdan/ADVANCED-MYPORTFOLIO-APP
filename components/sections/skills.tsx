@@ -58,9 +58,9 @@ export  function Skills(){
 return(
            <div id="section-3" className="flex  flex-col w-full pb-10  items-center bg-[#000020] text-[3.7px] gap-[20px] sm:text-[4.5px] lg:text-[5.5px] xl:text-[7px] ">
        
-                 <motion.h1 initial={{y:200,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{y:0,opacity:100}} 
+                 <motion.h1  initial={{opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.3}} whileInView={{opacity:100}} 
                  className="text-[6.5em] underline font-extrabold text-[#0077b6] mt-[20px]"> MY Skills</motion.h1>
-                 <motion.div initial={{y:200,opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.25}} whileInView={{y:0,opacity:100}} className="w-full flex justify-center items-center">
+                 <motion.div initial={{opacity:0}} transition={{duration:2}} viewport={{once:true,amount:0.25}} whileInView={{opacity:100}} className="w-full flex justify-center items-center">
                      <Accordion className= " w-[95%] sm:w-[80%] lg:w-[60%]  2xl:w-[45%]" type="single" collapsible>
                          <AccordionItem value="item-1">
             <AccordionTrigger className="text-[#0077b6] text-[4em] font-bold">Programming languages </AccordionTrigger>
