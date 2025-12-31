@@ -12,19 +12,25 @@ DialogDescription,
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { Spinner } from "@/components/ui/spinner"
+import { toast } from "sonner"
 
+import { useState } from "react"
 export function Dialogemail() {
 
+const [errmsg,seterrmsg]=useState<string | null>(null)
+const [loading,setloading]=useState<boolean>(false)
 async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
 
   ev.preventDefault()
-  console.log('asdasdasds')
+ 
   
   const data=new FormData(ev.currentTarget)
 
-  
   const formdata=Object.fromEntries(data.entries())
- fetch('https://ahmed-rarmadan-portfolio.vercel.app/email',{
+   setloading(true)        
+ try{
+    const res=await fetch('https://ahmed-rarmadan-portfolio.vercel.app/email',{
   method:'POST'
   ,
   headers:{
@@ -32,7 +38,21 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
     'Accept': 'application/json'
   },
   body:JSON.stringify(formdata)
- })
+
+    })
+    if(!res.ok){
+        throw new Error('failed to send email')
+    }
+    setloading(false)
+        seterrmsg(null)
+    
+   toast.success('Email sent successfully!')
+ }catch(err){
+    setloading(false)
+    seterrmsg("failed to send email , please try again later" )
+    return
+ }
+
 
 }
 
@@ -64,9 +84,10 @@ async function handlesubmit(ev:React.FormEvent<HTMLFormElement>){
               <Textarea id="content" name="content" required></Textarea>
             </div>
           </div>
-           <Button type="submit" className="bg-[#0077b6] hover:cursor-pointer hover:bg-[#023047] mt-[10px]"  >Send Message</Button>
+          { errmsg && <p className="w-full mt-[10px] text-center text-red-700">{errmsg}</p>}
+           <Button type="submit" className="bg-[#0077b6] hover:cursor-pointer hover:bg-[#023047] mt-[15px]"  >{loading ? <Spinner /> : 'Send Message'}</Button>
             </form >
-          <DialogFooter className="mt-[10px]">
+          <DialogFooter className="">
             <DialogClose asChild>
               <Button className="hover:cursor-pointer" variant="outline">Cancel</Button>
             </DialogClose>
